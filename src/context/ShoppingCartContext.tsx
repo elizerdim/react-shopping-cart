@@ -5,6 +5,7 @@ type ShoppingCartProviderProps = {
 };
 
 type ShoppingCartContext = {
+  isOpen: boolean;
   openCart: () => void;
   closeCart: () => void;
   getItemQuantity: (id: number) => number;
@@ -83,6 +84,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   return (
     <ShoppingCartContext.Provider
       value={{
+        isOpen,
         openCart,
         closeCart,
         getItemQuantity,

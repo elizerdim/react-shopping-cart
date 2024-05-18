@@ -5,11 +5,13 @@ import Store from "./pages/Store";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import ShoppingCart from "./components/ShoppingCart";
 
 export default function App() {
   return (
     <ShoppingCartProvider>
       <Navbar />
+      <ShoppingCart />
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={<Home />} />
