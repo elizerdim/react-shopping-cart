@@ -6,7 +6,7 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <Container>
+    <Container className="mb-4">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />
