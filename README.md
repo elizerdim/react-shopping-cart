@@ -43,25 +43,8 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- React Bootstrap
+- Intl.NumberFormat built-in JS object (see Useful resources section for MDN link)
 
 ### Continued development
 
@@ -70,4 +53,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [React Bootstrap](https://react-bootstrap.github.io/docs/getting-started/introduction) - Documentation for React Bootstrap
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [```Intl.NumberFormat``` object (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) - "The Intl.NumberFormat object enables language-sensitive number formatting." (also see [Beyond Fireship's video](https://www.youtube.com/watch?v=FUngCjDzFDo) from YouTube because he makes it more fun and [Web Dev Simplified's video](https://www.youtube.com/watch?v=4oGWpTAY_hc) because he goes into more depth)
