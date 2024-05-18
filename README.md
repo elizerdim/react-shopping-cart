@@ -43,6 +43,7 @@ Users should be able to:
 
 ### What I learned
 
+- ```useContext()```
 - React Bootstrap
 - Intl.NumberFormat built-in JS object (see Useful resources section for MDN link)
 
@@ -54,3 +55,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [React Bootstrap](https://react-bootstrap.github.io/docs/getting-started/introduction) - Documentation for React Bootstrap
 - [```Intl.NumberFormat``` object (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) - "The Intl.NumberFormat object enables language-sensitive number formatting." (also see [Beyond Fireship's video](https://www.youtube.com/watch?v=FUngCjDzFDo) from YouTube because he makes it more fun and [Web Dev Simplified's video](https://www.youtube.com/watch?v=4oGWpTAY_hc) because he goes into more depth)
+- [useContext introduction video](https://www.youtube.com/watch?v=_HdrLsyAdJg) - 2min. video with a very basic introduction to useContext hook
+- [useContext detailed video](https://www.youtube.com/watch?v=5LrDIWkK_Bc&t=191s) - more in-depth explanation of useContext by Web Dev Simplified

@@ -1,5 +1,6 @@
 import { Button, Card } from "react-bootstrap";
 import { formatCurrency } from "../utils/formatCurrency";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 type StoreItemProps = {
   id: number;
@@ -9,7 +10,13 @@ type StoreItemProps = {
 };
 
 export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
-  const quantity = 0;
+  const {
+    getItemQuantity,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+    removeFromCart,
+  } = useShoppingCart();
+  const quantity = getItemQuantity(id);
 
   return (
     <Card className="h-100">
@@ -26,7 +33,9 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100">+ Add To Cart</Button>
+            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
+              + Add To Cart
+            </Button>
           ) : (
             <div
               className="d-flex align-items-center flex-column"
@@ -36,17 +45,27 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
               >
-                <Button aria-label="Decrease quantity by one">-</Button>
+                <Button
+                  aria-label="Decrease quantity by one"
+                  onClick={() => decreaseCartQuantity(id)}
+                >
+                  -
+                </Button>
                 <div>
-                  <span className="fs-3">{quantity}</span>
-                  cart
+                  <span className="fs-3">{quantity}</span> in cart
                 </div>
-                <Button aria-label="Increase quantity by one">+</Button>
+                <Button
+                  aria-label="Increase quantity by one"
+                  onClick={() => increaseCartQuantity(id)}
+                >
+                  +
+                </Button>
               </div>
               <Button
                 variant="danger"
                 size="sm"
                 aria-label="Remove the product from the cart"
+                onClick={() => removeFromCart(id)}
               >
                 Remove
               </Button>
